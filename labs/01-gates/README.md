@@ -1,4 +1,8 @@
 # Cvičení první
+# Odkaz na playground
+## de morgan laws
+https://www.edaplayground.com/x/umsg
+## druha čast
 ## Kod pro de morganovy zakony
 ```
 -- Code your design here
@@ -26,12 +30,7 @@ entity gates is
     end architecture dataflow;
 ```
 # Screen simulace
-    ![simulace](images/Screenshot 1.png)
-# Odkaz na playground
-https://www.edaplayground.com/x/umsg
-<<<<<<< HEAD
+    ![Simulace](images/Screenshot 1.png)
+
 ## Kod pro druhou čast
     
-=======
-    
->>>>>>> f3050260cc61e2109dbbf374e0f42208e07d1bd3
