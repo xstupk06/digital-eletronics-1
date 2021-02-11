@@ -34,9 +34,11 @@ entity gates is
 ```
 ## Screen simulace
 ![Simulace](images/demorgan.PNG)
+## Výsledná tabulka
+
 ## Zadání pro druhou část
 Potvrdit zda se rovnice rovanají
-![Simulace](images/zadani2.png) 
+>![Simulace](images/zadani2.png) 
 ### Kod pro druhou čast
 ```vhdl
 library IEEE;
