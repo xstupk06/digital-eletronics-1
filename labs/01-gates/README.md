@@ -30,7 +30,7 @@ entity gates is
     end architecture dataflow;
 ```
 # Screen simulace
-    ![Simulace](images/Screenshot 1.png)
+    ![Simulace](images/demorgan.png)
 
 ## Kod pro druhou čast
     
