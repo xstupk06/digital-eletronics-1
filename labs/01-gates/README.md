@@ -1,5 +1,5 @@
-#Cvičení první#
-##Kod pro de morganovy zakony#
+#Cvičení první
+##Kod pro de morganovy zakony
 -- Code your design here
 library IEEE;
 use IEEE.std_logic_1164.all;
@@ -23,6 +23,6 @@ entity gates is
     fnand_o <= not (not (not b_i and a_i) and not(not b_i and not c_i));
     fnor_o <= (not(b_i or (not a_i))) or(not(c_i or b_i));
     end architecture dataflow;
-    #Screen simulace#
+    #Screen simulace
     <img src = "images/Screenshot 1">
     
