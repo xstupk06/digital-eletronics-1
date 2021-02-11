@@ -4,7 +4,7 @@
 https://www.edaplayground.com/x/umsg
 ### druha čast
 ### Kod pro de morganovy zakony
-```
+```vhdl
 -- Code your design here
 library IEEE;
 use IEEE.std_logic_1164.all;
