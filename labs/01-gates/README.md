@@ -26,7 +26,7 @@ entity gates is
     end architecture dataflow;
 ```
 # Screen simulace
-    ![simulace](images/Screenshot1.png)
+    ![simulace](images/Screenshot1.PNG)
 # Odkaz na playground
 https://www.edaplayground.com/x/umsg
     
