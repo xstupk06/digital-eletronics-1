@@ -29,4 +29,5 @@ entity gates is
     ![simulace](images/Screenshot 1.png)
 # Odkaz na playground
 https://www.edaplayground.com/x/umsg
+## Kod pro druhou čast
     
