@@ -1,9 +1,9 @@
 # Cvičení první
-# Odkaz na playground
-## de morgan laws
+## Odkaz na playground
+### de morgan laws
 https://www.edaplayground.com/x/umsg
-## druha čast
-## Kod pro de morganovy zakony
+### druha čast
+### Kod pro de morganovy zakony
 ```
 -- Code your design here
 library IEEE;
@@ -29,8 +29,8 @@ entity gates is
     fnor_o <= (not(b_i or (not a_i))) or(not(c_i or b_i));
     end architecture dataflow;
 ```
-# Screen simulace
+## Screen simulace
     ![Simulace](images/demorgan.PNG)
 
-## Kod pro druhou čast
+### Kod pro druhou čast
     
