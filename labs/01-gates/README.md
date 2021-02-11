@@ -35,6 +35,16 @@ entity gates is
 ## Screen simulace
 ![Simulace](images/demorgan.PNG)
 ## Výsledná tabulka
+| **c** | **b** |**a** | **f(c,b,a)** | **f(c,b,a)** | **f(c,b,a)** |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0 | 0 | 1 |0 | 1 |
+| 0 | 0 | 1 | 1 |0 | 1 |
+| 0 | 1 | 0 | 0 |0 | 1 |
+| 0 | 1 | 1 | 0 |0 | 1 |
+| 1 | 0 | 0 | 0 |0 | 1 |
+| 1 | 0 | 1 | 1 |0 | 1 |
+| 1 | 1 | 0 | 0 |0 | 1 |
+| 1 | 1 | 1 | 0 |0 | 1 |
 
 ## Zadání pro druhou část
 Potvrdit zda se rovnice rovanají
