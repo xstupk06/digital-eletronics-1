@@ -5,7 +5,7 @@ https://www.edaplayground.com/x/umsg
 ### druha čast
 https://www.edaplayground.com/x/ht96
 ## Zadání de Morgan
-![Zadání 1](images/zadani1.PNG)
+![Zadání 1](images/zadani1.gif)
 ### Kod pro de morganovy zakony
 ```vhdl
 -- Code your design here
@@ -36,7 +36,7 @@ entity gates is
 ![Simulace](images/demorgan.PNG)
 ## Zadání pro druhou část
 Potvrdit zda se rovnice rovanají
-![Simulace](images/zadani2.PNG) 
+![Simulace](images/zadani2.gif) 
 ### Kod pro druhou čast
 ```vhdl
 library IEEE;
