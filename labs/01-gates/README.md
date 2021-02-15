@@ -1,4 +1,6 @@
 # Cvičení první
+## Odkaz na github
+https://github.com/xstupk06
 ## Odkaz na playground
 ### de morgan laws
 https://www.edaplayground.com/x/umsg
@@ -75,5 +77,5 @@ entity gates is
 	f4_o <= (a_i or (b_i and c_i));
     end architecture dataflow;
 ```
-## Screenshop pro druhou simulaci
+## Screenshot pro druhou simulaci
 ![Simulace](images/2cast.PNG)    
