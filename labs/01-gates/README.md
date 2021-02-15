@@ -1,14 +1,13 @@
-# Cvičení první
+# Cvičení první 01-gates
 ## Odkaz na github
 https://github.com/xstupk06
-## Odkaz na playground
-### de morgan laws
+## Odkaz na playground De Morgan laws
+
 https://www.edaplayground.com/x/umsg
-### druha čast
-https://www.edaplayground.com/x/ht96
+
 ## Zadání de Morgan
 ![Zadání 1](images/zadani1.gif)
-### Kod pro de morganovy zakony
+### Kod pro de Morgan laws
 ```vhdl
 -- Code your design here
 library IEEE;
@@ -34,7 +33,7 @@ entity gates is
     fnor_o <= (not(b_i or (not a_i))) or(not(c_i or b_i));
     end architecture dataflow;
 ```
-## Screen simulace
+## Screen simulace de Morgan laws
 ![Simulace](images/demorgan.PNG)
 ## Výsledná tabulka
 | **c** | **b** |**a** | **f(c,b,a)** | **f(c,b,a)NAND** | **f(c,b,a)NOR** |
@@ -48,7 +47,7 @@ entity gates is
 | 1 | 1 | 0 | 0 |0 | 0 |
 | 1 | 1 | 1 | 0 |0 | 0 |
 
-## Zadání pro druhou část
+## Zadání pro Distributive laws
 Potvrdit zda se rovnice rovanají
 >![Simulace](images/zadani2.png) 
 ### Kod pro druhou čast
@@ -77,5 +76,7 @@ entity gates is
 	f4_o <= (a_i or (b_i and c_i));
     end architecture dataflow;
 ```
-## Screenshot pro druhou simulaci
+## Screenshot pro Distributive laws
 ![Simulace](images/2cast.PNG)    
+## Odkaz na playground Distributive laws
+https://www.edaplayground.com/x/ht96
