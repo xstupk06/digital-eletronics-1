@@ -20,8 +20,8 @@
 | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
 
-![vzorec](images/PoS.PNG)
-![vzorec](images/SoP.PNG)
+![PoS](images/PoS.PNG)
+![SoP](images/SoP.PNG)
 # 2.Ukol
 ## Karnaughova mapa pro všechny 3 funkce a minimalizovaní PoS a Sop funkce
 ![mapa](images/1mapa.PNG)
