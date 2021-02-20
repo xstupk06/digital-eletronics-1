@@ -21,7 +21,7 @@
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
 ## Vzorce pro PoS a SoP
 ![PoS](images/PoS.PNG)
-![SoP](images/SoP.PNG)
+
 # 2.Ukol
 ## Karnaughova mapa pro všechny 3 funkce a minimalizovaní PoS a Sop funkce
 ![mapa](images/1mapa.PNG)
