@@ -19,7 +19,7 @@
 | 13 | 1 1 | 0 1 | 1 | 0 | 0 |
 | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
-
+## Vzorce pro PoS a SoP
 ![PoS](images/PoS.PNG)
 ![SoP](images/SoP.PNG)
 # 2.Ukol
