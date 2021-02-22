@@ -4,6 +4,8 @@
 ## Vzorce pro PoS a SoP
 
 ![1](images/1.PNG)
+
+
 ![2](images/2.PNG)
 | *Dec. equivalent* | *B[1:0]* | *A[1:0]* | *B is greater than A* | *B equals A* | *B is less than A* |
 | :-: | :-: | :-: | :-: | :-: | :-: |
