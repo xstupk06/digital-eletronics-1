@@ -3,7 +3,7 @@
 ## Domací příprava
 ## Vzorce pro PoS a SoP
 
-![1](images/1.PNG)
+![1](images/123.PNG)
 
 
 ![2](images/2.PNG)
