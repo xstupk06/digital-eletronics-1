@@ -2,8 +2,9 @@
 # 1.Ukol
 ## Domací příprava
 ## Vzorce pro PoS a SoP
-![PoS](images/PoS.PNG)
-![SoP](images/SoP.PNG)
+
+![PoS](images/1.PNG)
+![SoP](images/2.PNG)
 | *Dec. equivalent* | *B[1:0]* | *A[1:0]* | *B is greater than A* | *B equals A* | *B is less than A* |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0 0 | 0 0 | 0 | 1 | 0 |
