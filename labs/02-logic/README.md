@@ -1,6 +1,9 @@
 # 02-logic
 # 1.Ukol
 ## Domací příprava
+#Vzorce pro PoS a SoP
+![PoS](images/PoS.PNG)
+![SoP](images/SoP.PNG)
 | *Dec. equivalent* | *B[1:0]* | *A[1:0]* | *B is greater than A* | *B equals A* | *B is less than A* |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0 0 | 0 0 | 0 | 1 | 0 |
@@ -19,8 +22,6 @@
 | 13 | 1 1 | 0 1 | 1 | 0 | 0 |
 | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
-## Vzorce pro PoS a SoP
-![PoS](images/PoS.PNG)
 
 # 2.Ukol
 ## Karnaughova mapa pro všechny 3 funkce a minimalizovaní PoS a Sop funkce
