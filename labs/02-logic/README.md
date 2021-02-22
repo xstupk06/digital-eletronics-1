@@ -34,7 +34,7 @@
 https://www.edaplayground.com/x/ZJhj
 # 3. Ukol
 ## Kod pro 4 bitový komparator 
-###design.vhd
+### design.vhd
 ```vhdl
 library IEEE;
 use IEEE.std_logic_1164.all;
@@ -57,8 +57,8 @@ entity comparator_4bit is
   
     end architecture Behavioral;
 ```
-###
-testbench
+### testbench
+
 ```vhdl
 library ieee;
 use ieee.std_logic_1164.all;
