@@ -1,7 +1,7 @@
 # 02-logic
 # 1.Ukol
 ## Domací příprava
-#Vzorce pro PoS a SoP
+## Vzorce pro PoS a SoP
 ![PoS](images/PoS.PNG)
 ![SoP](images/SoP.PNG)
 | *Dec. equivalent* | *B[1:0]* | *A[1:0]* | *B is greater than A* | *B equals A* | *B is less than A* |
