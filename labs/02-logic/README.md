@@ -1,4 +1,6 @@
 # 02-logic
+## Odkaz na github
+https://github.com/xstupk06?tab=repositories
 # 1.Ukol
 ## Domací příprava
 ## Vzorce pro PoS a SoP
