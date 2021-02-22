@@ -33,7 +33,7 @@ https://github.com/xstupk06?tab=repositories
 ![mapa](images/1mapa.PNG)
 ![mapa](images/mapy.PNG)
 ## Odkaz na playground pro 2bit komparator
-https://www.edaplayground.com/x/ZJhj
+https://www.edaplayground.com/x/wN5n
 # 3. Ukol
 ## Kod pro 4 bitový komparator 
 ### design.vhd
