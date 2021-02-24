@@ -1,6 +1,6 @@
 # 03-vivado
 ## Architecture of design
-´´´vhdl
+```vhdl
 architecture Behavioral of mux_2bit_4to1 is
     begin
     f_o <= a_i when (sel_i ="00") else
@@ -12,9 +12,9 @@ architecture Behavioral of mux_2bit_4to1 is
   
  
     end architecture Behavioral;
-´´´
+```
 ## stimulus proccess
-´´´vhdl
+```vhdl
  p_stimulus : process
     begin
         -- Report a note at the begining of stimulus process
@@ -34,4 +34,4 @@ architecture Behavioral of mux_2bit_4to1 is
         report "Stimulus process finished" severity note;
         wait;
     end process p_stimulus;
-´´´
+```
