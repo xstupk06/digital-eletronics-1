@@ -35,3 +35,23 @@ architecture Behavioral of mux_2bit_4to1 is
         wait;
     end process p_stimulus;
 ```
+## Screenshot simulace
+![1](images/simulace.PNG)
+## Tutorial k Vivado
+![1](images/1.PNG)
+![1](images/2.PNG)
+![1](images/3.PNG)
+![1](images/4.PNG)
+![1](images/5.PNG)
+![1](images/6.PNG)
+![1](images/7.PNG)
+![1](images/8.PNG)
+![1](images/9.PNG)
+![1](images/10.PNG)
+![1](images/11.PNG)
+![1](images/12.PNG)
+![1](images/13.PNG)
+![1](images/14.PNG)
+![1](images/15.PNG)
+![1](images/16.PNG)
+![1](images/17.PNG)
