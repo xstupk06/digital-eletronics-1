@@ -136,7 +136,7 @@ K přídání simulace nebo constrains slouží na levé straně tlačítko Add 
 ![1](images/12.PNG)
 
 
-Vybere co chceme přidat a klikneme na Next
+Zde si vybereme jestli chceme přidat testbench, design nebo XDC contrains file, a postupujeme dále tlačítkem NEXT
 
 
 ![1](images/13.PNG)
