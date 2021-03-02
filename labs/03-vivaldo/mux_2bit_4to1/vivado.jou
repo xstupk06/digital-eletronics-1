@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Mar  2 18:10:41 2021
+# Process ID: 21320
+# Current directory: C:/Stupka/digital-eletronics-1/labs/03-vivaldo/mux_2bit_4to1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19424 C:\Stupka\digital-eletronics-1\labs\03-vivaldo\mux_2bit_4to1\mux_2bit_4to1.xpr
+# Log file: C:/Stupka/digital-eletronics-1/labs/03-vivaldo/mux_2bit_4to1/vivado.log
+# Journal file: C:/Stupka/digital-eletronics-1/labs/03-vivaldo/mux_2bit_4to1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Stupka/digital-eletronics-1/labs/03-vivaldo/mux_2bit_4to1/mux_2bit_4to1.xpr
