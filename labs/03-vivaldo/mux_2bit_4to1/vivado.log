@@ -18,3 +18,10 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
 open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 1004.941 ; gain = 0.000
+update_compile_order -fileset sources_1
+file mkdir C:/Stupka/digital-eletronics-1/labs/03-vivaldo/mux_2bit_4to1/mux_2bit_4to1.srcs/constrs_1
+file mkdir C:/Stupka/digital-eletronics-1/labs/03-vivaldo/mux_2bit_4to1/mux_2bit_4to1.srcs/constrs_1/new
+close [ open C:/Stupka/digital-eletronics-1/labs/03-vivaldo/mux_2bit_4to1/mux_2bit_4to1.srcs/constrs_1/new/nexys-a7-50t.xdc w ]
+add_files -fileset constrs_1 C:/Stupka/digital-eletronics-1/labs/03-vivaldo/mux_2bit_4to1/mux_2bit_4to1.srcs/constrs_1/new/nexys-a7-50t.xdc
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar  2 18:16:41 2021...

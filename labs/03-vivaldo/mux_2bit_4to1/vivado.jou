@@ -11,3 +11,8 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Stupka/digital-eletronics-1/labs/03-vivaldo/mux_2bit_4to1/mux_2bit_4to1.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/Stupka/digital-eletronics-1/labs/03-vivaldo/mux_2bit_4to1/mux_2bit_4to1.srcs/constrs_1
+file mkdir C:/Stupka/digital-eletronics-1/labs/03-vivaldo/mux_2bit_4to1/mux_2bit_4to1.srcs/constrs_1/new
+close [ open C:/Stupka/digital-eletronics-1/labs/03-vivaldo/mux_2bit_4to1/mux_2bit_4to1.srcs/constrs_1/new/nexys-a7-50t.xdc w ]
+add_files -fileset constrs_1 C:/Stupka/digital-eletronics-1/labs/03-vivaldo/mux_2bit_4to1/mux_2bit_4to1.srcs/constrs_1/new/nexys-a7-50t.xdc
