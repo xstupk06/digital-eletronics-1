@@ -1,23 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 03.03.2021 15:32:40
--- Design Name: 
--- Module Name: hex_7seg - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -43,12 +23,6 @@ architecture Behavioral of hex_7seg is
 
 begin
 
---------------------------------------------------------------------
-    -- p_7seg_decoder:
-    -- A combinational process for 7-segment display decoder. 
-    -- Any time "hex_i" is changed, the process is "executed".
-    -- Output pin seg_o(6) corresponds to segment A, seg_o(5) to B, etc.
-    --------------------------------------------------------------------
     p_7seg_decoder : process(hex_i)
     begin
         case hex_i is
