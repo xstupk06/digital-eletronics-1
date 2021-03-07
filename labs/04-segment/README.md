@@ -124,11 +124,10 @@ end Behavioral;
 
 ```
 ## 3.Truth table and listing of VHDL code for LEDs(7:4) with syntax highlighting
-
-| **Hex** | **Inputs** | **LED4** | **LED5** | **LED6** | **LED7** |
+| Hex | Inputs | LED4 | LED5 | LED6 | LED7 |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0000 |1  |0  |0  | 0 |
-| 1 | 0001 | 0 |0  |1  | 0 |
+| 1 | 0001 | 0 |0  |1  | 1 |
 | 2 | 0010 | 0 |0  |0  | 1 |
 | 3 | 0011 | 0 |0  |1  | 0 |
 | 4 | 0100 |0  |0  |0  | 1 |
@@ -142,4 +141,4 @@ end Behavioral;
 | C | 1100 |0  |1  |0  | 0 |
 | d | 1101 |0  |1  |1  | 0 |
 | E | 1110 |0  |1  |0  | 0 |
-| F | 1111 |0  |1  |1  | 1 |
+| F | 1111 |0  |1  |1  | 0 |
