@@ -11,3 +11,52 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Stupka/digital-eletronics-1/labs/04-segment/display/display.xpr
+update_compile_order -fileset sources_1
+reset_simulation -simset sim_1 -mode behavioral
+reset_simulation -simset sim_1 -mode behavioral
+launch_simulation
+open_wave_config C:/Stupka/digital-eletronics-1/labs/04-segment/display/tb_hex_7seg_behav.wcfg
+source tb_top.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Stupka/digital-eletronics-1/labs/04-segment/display/tb_hex_7seg_behav.wcfg
+source tb_top.tcl
+current_wave_config {tb_hex_7seg_behav.wcfg}
+add_wave {{/tb_top/s_CA}} 
+current_wave_config {tb_hex_7seg_behav.wcfg}
+add_wave {{/tb_top/s_CB}} 
+current_wave_config {tb_hex_7seg_behav.wcfg}
+add_wave {{/tb_top/s_CC}} 
+current_wave_config {tb_hex_7seg_behav.wcfg}
+add_wave {{/tb_top/s_CD}} 
+current_wave_config {tb_hex_7seg_behav.wcfg}
+add_wave {{/tb_top/s_CE}} 
+current_wave_config {tb_hex_7seg_behav.wcfg}
+add_wave {{/tb_top/s_CF}} 
+current_wave_config {tb_hex_7seg_behav.wcfg}
+add_wave {{/tb_top/s_CG}} 
+current_wave_config {tb_hex_7seg_behav.wcfg}
+add_wave {{/tb_top/s_LED}} 
+current_wave_config {tb_hex_7seg_behav.wcfg}
+add_wave {{/tb_top/s_AN}} 
+current_wave_config {tb_hex_7seg_behav.wcfg}
+add_wave {{/tb_top/s_SW}} 
+current_wave_config {tb_hex_7seg_behav.wcfg}
+add_wave {{/tb_top/s_CA}} 
+save_wave_config {C:/Stupka/digital-eletronics-1/labs/04-segment/display/tb_hex_7seg_behav.wcfg}
+close_sim
+reset_simulation -simset sim_1 -mode behavioral
+reset_simulation -simset sim_1 -mode behavioral
+reset_simulation -simset sim_1 -mode behavioral
+reset_simulation -simset sim_1 -mode behavioral
+reset_simulation -simset sim_1 -mode behavioral
+reset_simulation -simset sim_1 -mode behavioral
+reset_simulation -simset sim_1 -mode behavioral
+reset_simulation -simset sim_1 -mode behavioral
+reset_simulation -simset sim_1 -mode behavioral
+reset_simulation -simset sim_1 -mode behavioral
+reset_simulation -simset sim_1 -mode behavioral
+launch_simulation
+open_wave_config C:/Stupka/digital-eletronics-1/labs/04-segment/display/tb_hex_7seg_behav.wcfg
+source tb_top.tcl
+close_sim

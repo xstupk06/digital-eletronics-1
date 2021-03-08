@@ -154,6 +154,7 @@ end Behavioral;
 | E | 1110 |0  |1  |0  | 0 |
 | F | 1111 |0  |1  |1  | 0 |
 ## listing of VHDL code for LEDs(7:4) with syntax highlighting
+``` vhdl
 architecture Behavioral of top is
 
 begin
