@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar  8 09:16:04 2021
+# Process ID: 23376
+# Current directory: C:/Stupka/digital-eletronics-1/labs/04-segment/display
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19888 C:\Stupka\digital-eletronics-1\labs\04-segment\display\display.xpr
+# Log file: C:/Stupka/digital-eletronics-1/labs/04-segment/display/vivado.log
+# Journal file: C:/Stupka/digital-eletronics-1/labs/04-segment/display\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Stupka/digital-eletronics-1/labs/04-segment/display/display.xpr
+update_compile_order -fileset sources_1
+reset_simulation -simset sim_1 -mode behavioral
+launch_simulation
+open_wave_config C:/Stupka/digital-eletronics-1/labs/04-segment/display/tb_hex_7seg_behav.wcfg
+source tb_top.tcl
+close_sim
+reset_simulation -simset sim_1 -mode behavioral
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top hex_7seg [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Stupka/digital-eletronics-1/labs/04-segment/display/tb_hex_7seg_behav.wcfg
+source tb_top.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_simulation -simset sim_1 -mode behavioral
+update_compile_order -fileset sources_1
+reset_simulation -simset sim_1 -mode behavioral
+reset_simulation -simset sim_1 -mode behavioral
+reset_simulation -simset sim_1 -mode behavioral
+launch_simulation
+open_wave_config C:/Stupka/digital-eletronics-1/labs/04-segment/display/tb_hex_7seg_behav.wcfg
+source tb_top.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Stupka/digital-eletronics-1/labs/04-segment/display/tb_hex_7seg_behav.wcfg
+source tb_top.tcl
+close_sim
+reset_simulation -simset sim_1 -mode behavioral
