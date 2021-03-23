@@ -113,3 +113,4 @@ end architecture Behavioral;
 ```
 ## 3.Eight-digit driver. Submit:
 ### Image of the driver schematic. The image can be drawn on a computer or by hand.
+![1](images/schema.PNG)
