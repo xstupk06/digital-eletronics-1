@@ -88,7 +88,7 @@ begin
     p_reset_gen : process
     begin
     s_reset <= '0';
-    wait for 10 ns; 
+    wait for 28 ns; 
 
      s_reset <= '1';
      wait for 53 ns; 
@@ -106,14 +106,7 @@ begin
         s_data0_i <= "0010";
         s_dp_i    <= "0111";
 
-        wait for 600 ns;
-        
-        s_data3_i <= "0000";
-        s_data2_i <= "0001";
-        s_data1_i <= "0000";
-        s_data0_i <= "0001";
-      
-      
+       
       wait;
       end process p_stimulus;
     --------------------------------------------------------------------
