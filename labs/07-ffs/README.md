@@ -6,26 +6,26 @@
    | :-: | :-: | :-: | :-: | :-- |
    | ![rising](images/uparrow.png) | 0 | 0 |  |  |
    | ![rising](images/uparrow.png) | 0 | 1 |  |  |
-   | ![rising](images/uparrow.png) | 1 |  |  |  |
-   | ![rising](images/uparrow.png) | 1 |  |  |  |
+   | ![rising](images/uparrow.png) | 1 | 0 |  |  |
+   | ![rising](images/uparrow.png) | 1 | 1 |  |  |
 
    | **clk** | **j** | **k** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-: | :-- |
    | ![rising](images/uparrow.png) | 0 | 0 | 0 | 0 | No change |
    | ![rising](images/uparrow.png) | 0 | 0 | 1 | 1 | No change |
-   | ![rising](images/uparrow.png) | 0 |  |  |  |  |
-   | ![rising](images/uparrow.png) | 0 |  |  |  |  |
-   | ![rising](images/uparrow.png) | 1 |  |  |  |  |
-   | ![rising](images/uparrow.png) | 1 |  |  |  |  |
-   | ![rising](images/uparrow.png) | 1 |  |  |  |  |
-   | ![rising](images/uparrow.png) | 1 |  |  |  |  |
+   | ![rising](images/uparrow.png) | 0 | 0 | 1 | 0 |  |
+   | ![rising](images/uparrow.png) | 0 | 1 | 1 | 1 |  |
+   | ![rising](images/uparrow.png) | 1 | 1 | 1 | 0 |  |
+   | ![rising](images/uparrow.png) | 1 | 1 | 0 | 1 |  |
+   | ![rising](images/uparrow.png) | 1 | 1 | 1 | 0 |  |
+   | ![rising](images/uparrow.png) | 1 | 1 | 1 | 1 |  |
 
    | **clk** | **t** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
-   | ![rising](images/uparrow.png) | 0 | 0 |  |  |
+   | ![1](images/simulace_d_ff_arst.PNG) | 0 | 0 |  |  |
    | ![rising](images/uparrow.png) | 0 | 1 |  |  |
-   | ![rising](images/uparrow.png) | 1 |  |  |  |
-   | ![rising](images/uparrow.png) | 1 |  |  |  |
+   | ![rising](images/uparrow.png) | 1 | 0 |  |  |
+   | ![rising](images/uparrow.png) | 1 | 1 |  |  |
 
 ## 2.D latch. Submit
 ### VHDL code listing of the process p_d_latch with syntax highlighting
