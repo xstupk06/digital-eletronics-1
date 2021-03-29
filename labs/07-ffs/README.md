@@ -1,31 +1,31 @@
 # 07-ffs
 ## 1.Preparation tasks (done before the lab at home). Submit
 ### Characteristic equations and completed tables for D, JK, T flip-flops.
-
+![0](Images/rovnice.png)
    | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
-   | ![1](images/sipka.PNG)  | 0 | 0 |  |  |
-   | ![1](images/sipka.PNG)  | 0 | 1 |  |  |
-   | ![1](images/sipka.PNG)  | 1 | 0 |  |  |
-   | ![1](images/sipka.PNG)  | 1 | 1 |  |  |
+   | ![1](images/sipka.PNG)  | 0 | 0 | 0 | No change |
+   | ![1](images/sipka.PNG)  | 0 | 1 | 0 | RESET |
+   | ![1](images/sipka.PNG)  | 1 | 0 | 1 | No change |
+   | ![1](images/sipka.PNG)  | 1 | 1 | 1 | SET |
 
    | **clk** | **j** | **k** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-: | :-- |
    | ![1](images/sipka.PNG)  | 0 | 0 | 0 | 0 | No change |
    | ![1](images/sipka.PNG)  | 0 | 0 | 1 | 1 | No change |
-   | ![1](images/sipka.PNG)  | 0 | 0 | 1 | 0 |  |
-   | ![1](images/sipka.PNG)  | 0 | 1 | 1 | 1 |  |
-   | ![1](images/sipka.PNG)  | 1 | 1 | 1 | 0 |  |
-   | ![1](images/sipka.PNG)  | 1 | 1 | 0 | 1 |  |
-   | ![1](images/sipka.PNG)  | 1 | 1 | 1 | 0 |  |
-   | ![1](images/sipka.PNG) | 1 | 1 | 1 | 1 |  |
+   | ![1](images/sipka.PNG)  | 0 | 0 | 1 | 0 | RESET |
+   | ![1](images/sipka.PNG)  | 0 | 1 | 1 | 0 | RESET |
+   | ![1](images/sipka.PNG)  | 1 | 0 | 0 | 1 | SET |
+   | ![1](images/sipka.PNG)  | 1 | 0 | 1 | 1 | SET |
+   | ![1](images/sipka.PNG)  | 1 | 1 | 0 | 1 | TOGGLE |
+   | ![1](images/sipka.PNG)  | 1 | 1 | 1 | 0 | TOGGLE |
 
    | **clk** | **t** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
-   | ![1](images/sipka.PNG) | 0 | 0 |  |  |
-   | ![1](images/sipka.PNG)  | 0 | 1 |  |  |
-   | ![1](images/sipka.PNG)  | 1 | 0 |  |  |
-   | ![1](images/sipka.PNG)  | 1 | 1 |  |  |
+   | ![1](images/sipka.PNG)  | 0 | 0 | 0 | No change |
+   | ![1](images/sipka.PNG)  | 0 | 1 | 1 | No Change |
+   | ![1](images/sipka.PNG)  | 1 | 0 | 1 | INVERT (Toggle) |
+   | ![1](images/sipka.PNG)  | 1 | 1 | 0 | INVERT (Toggle) |
 
 ## 2.D latch. Submit
 ### VHDL code listing of the process p_d_latch with syntax highlighting
