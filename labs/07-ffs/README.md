@@ -245,7 +245,7 @@ begin
 ```vhdl
 p_clk_gen : process
  begin
-    while now < 750 ns loop
+    while now < 650 ns loop
         s_clk_100MHz <= '0';
         wait for c_CLK_100MHZ_PERIOD / 2;
         s_clk_100MHz <= '1';
