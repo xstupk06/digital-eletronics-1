@@ -1,7 +1,7 @@
 # 07-ffs
 ## 1.Preparation tasks (done before the lab at home). Submit
 ### Characteristic equations and completed tables for D, JK, T flip-flops.
-![1](images/rovnice.png)
+![1](images/rov.png)
    | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
    | ![1](images/sipka.PNG)  | 0 | 0 | 0 | No change |
