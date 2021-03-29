@@ -242,8 +242,9 @@ begin
   q_bar <= not s_q;
 ```
 ### Listing of VHDL clock, reset and stimulus processes from the testbench files with syntax highlighting and asserts
+#### d_ff_arst
 ```vhdl
-p_clk_gen : process
+ p_clk_gen : process
  begin
     while now < 650 ns loop
         s_clk_100MHz <= '0';
@@ -291,14 +292,167 @@ p_clk_gen : process
     wait;
     end process p_stimulus;
 ```
-##Screenshot with simulated time waveforms; always display all inputs and outputs. The full functionality of the entities must be verified
+#### d_ff_rst
+```vhdl
+ p_clk_gen : process
+ begin
+    while now < 650 ns loop
+        s_clk_100MHz <= '0';
+        wait for c_CLK_100MHZ_PERIOD / 2;
+        s_clk_100MHz <= '1';
+        wait for c_CLK_100MHZ_PERIOD / 2;
+    end loop;
+    wait;
+ end process p_clk_gen;
+ 
+ --Reset process
+  p_reset_gen : process
+  begin
+    s_rst <= '0';
+        wait for 53 ns;
+        
+     s_rst <= '1';
+        wait for 15 ns;
+        
+     s_rst <= '0';
+        
+   wait;
+   end process p_reset_gen;
+   
+   
+   
+   p_stimulus :process
+    begin
+        report"Stimulus processs started" severity note;
+     s_d <= '0';   
+    wait for 13 ns;    
+    s_d <= '1';
+     wait for 10 ns;    
+    s_d <= '0';
+     wait for 10 ns;    
+    s_d <= '1';
+     wait for 10 ns;    
+    s_d <= '0';
+     wait for 10 ns;    
+    s_d <= '1';
+    wait for 10 ns;    
+    s_d <= '0';   
+    wait for 10 ns;
+    
+    wait;
+    end process p_stimulus;
+```
+#### jk_ff_rst
+```vhdl
+p_clk_gen : process
+ begin
+    while now < 650 ns loop
+        s_clk_100MHz <= '0';
+        wait for c_CLK_100MHZ_PERIOD / 2;
+        s_clk_100MHz <= '1';
+        wait for c_CLK_100MHZ_PERIOD / 2;
+    end loop;
+    wait;
+ end process p_clk_gen;
+ 
+ 
+  --Reset process
+  p_reset_gen : process
+  begin
+    s_rst <= '0';
+        wait for 53 ns;
+        
+     s_rst <= '1';
+        wait for 15 ns;
+        
+     s_rst <= '0';
+        
+   wait;
+   end process p_reset_gen;
+   
+   
+     p_stimulus :process
+    begin
+        report"Stimulus processs started" severity note;
+     s_j <= '0'; 
+     s_k <= '0';   
+    wait for 13 ns;    
+    s_j <= '0'; 
+    s_k <= '1'; 
+     wait for 10 ns;    
+    s_j <= '1';
+    s_k <= '0'; 
+     wait for 10 ns;    
+    s_j <= '1'; 
+    s_k <= '1';    
+   
+    wait for 10 ns;
+    
+    wait;
+    end process p_stimulus;
+
+```
+#### t_ff_rst
+```vhdl
+p_clk_gen : process
+ begin
+    while now < 650 ns loop
+        s_clk_100MHz <= '0';
+        wait for c_CLK_100MHZ_PERIOD / 2;
+        s_clk_100MHz <= '1';
+        wait for c_CLK_100MHZ_PERIOD / 2;
+    end loop;
+    wait;
+ end process p_clk_gen;
+ 
+ 
+  --Reset process
+  p_reset_gen : process
+  begin
+    s_rst <= '0';
+        wait for 53 ns;
+        
+     s_rst <= '1';
+        wait for 15 ns;
+        
+     s_rst <= '0';
+        
+   wait;
+   end process p_reset_gen;
+   
+   
+     p_stimulus :process
+    begin
+        report"Stimulus processs started" severity note;
+    
+     s_t <= '0';   
+    wait for 13 ns;    
+    s_t <= '1';   
+     wait for 10 ns;    
+    s_t <= '0';   
+     wait for 10 ns;    
+    s_t <= '0';  
+     wait for 10 ns;    
+    s_t <= '1';   
+     wait for 10 ns;    
+    s_t <= '0';  
+    wait for 10 ns;    
+    s_t <= '0';    
+    wait for 10 ns;
+    
+    wait;
+    end process p_stimulus;
+
+```
+#### p_d_ff_arst
+## Screenshot with simulated time waveforms; always display all inputs and outputs. The full functionality of the entities must be verified
 #### p_d_ff_arst
 ![1](images/simulace_d_ff_arst.PNG)
-#### p_d_ff_rst
+#### d_ff_rst
 ![1](images/simulace_d_ff_rst.PNG)
-#### p_jk_ff_rst
+#### jk_ff_rst
 ![1](images/simulace_jk_ff_rst.PNG)
-#### p_t_ff_rst
+#### t_ff_rst
 ![1](images/simulace_t_ff_rst.PNG)
 ## 4.Shift register. Submit
 ### Image of the shift register schematic. The image can be drawn on a computer or by hand. Name all inputs, outputs, components and internal signals.
