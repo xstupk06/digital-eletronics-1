@@ -45,13 +45,19 @@ architecture Behavioral of d_ff_rst is
 
 begin
 
-p_d_ff_rst : process (clk)
-begin
-       --pokud je arst v 0 a je vzestupná hrana 
-    if (rising_edge(clk)) then
-       q      <= d; 
-       q_bar  <= not d;
-    end if;
+p_d_ff_rst : process (clk, rst)
+ begin
+        if rising_edge(clk) then
+            if (rst = '1') then
+                q     <= '0';
+                q_bar <= '1';
+            
+            else
+                q     <= d;
+                q_bar <= not d;
+            
+            end if;
+        end if;
   end process p_d_ff_rst;
 
 end Behavioral;

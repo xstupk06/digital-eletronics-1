@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim/xsim.dir/tb_d_latch_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Sun Mar 28 17:52:17 2021" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Tue Mar 30 16:10:33 2021" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2020.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "3064766" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -26,7 +26,7 @@ webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
 webtalk_add_data -client xsim -key runtime -value "1 us" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.11_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "6356_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 166310090 -regid "" -xml C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim/xsim.dir/tb_d_latch_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim/xsim.dir/tb_d_latch_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim/xsim.dir/tb_d_latch_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.05_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "6420_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 3500219191 -regid "" -xml C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim/xsim.dir/tb_d_latch_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim/xsim.dir/tb_d_latch_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.sim/sim_1/behav/xsim/xsim.dir/tb_d_latch_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

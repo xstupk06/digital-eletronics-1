@@ -52,125 +52,99 @@ q_bar   => s_qbar
  );
 
 
-    p_reset_gen : process
-  begin
-    s_arst <= '0';
-    wait for 53 ns;
-    
-    
-    wait for 1 ns;
-     assert(s_q = '0' and s_qbar = '1')
-    report "Vıpis chyby2" severity error;
-   
-    
-    s_arst <= '1';
-    wait for 5 ns;
-    
-    s_arst <= '0';
-    
-    wait for 108 ns;
+ p_reset_gen : process
+ begin
+     s_arst <= '0';
+     wait for 40 ns;
+     
+     -- Reset activated
      s_arst <= '1';
-  
-    wait;
-    end process p_reset_gen;
+     wait for 50 ns;
 
-
-
-p_stimulus :process
-    begin
-        report"Stimulus processs started" severity note;
-        
-    s_en  <= '0';
-    s_d   <= '0';
-    
-    
-    wait for 10 ns;    
-    s_d <= '1';
-     wait for 10 ns;    
-    s_d <= '0';
-     wait for 10 ns;    
-    s_d <= '1';
-     wait for 10 ns;    
-    s_d <= '0';
-     wait for 10 ns;    
-    s_d <= '1';
-    wait for 10 ns;    
-    s_d <= '0';
-    
-
-    
-    wait for 10 ns;  
+     --Reset deactivated
+     s_arst <= '0';
+     wait for 85 ns;
      
-     
+     s_arst <= '1';
+     wait;
+ end process p_reset_gen;
+
+--------------------------------------------------------------------
+-- Data generation process
+--------------------------------------------------------------------
+p_stimulus : process
+begin
+    report "Stimulus process started" severity note;
+    
+    s_d  <= '0';
+    s_en <= '0';
+    
+    --d sekv (en <= '0')
+    wait for 10 ns;
+    s_d  <= '1';
+    wait for 10 ns;
+    s_d  <= '0';
+    wait for 5 ns;
+assert(s_q = '0' and s_qbar = '1')
+    report "Chyba" severity error;
+    wait for 5 ns;
+    s_d  <= '1';
+    wait for 10 ns;
+    s_d  <= '0';
+    wait for 10 ns;
+    s_d  <= '1';
+    wait for 10 ns; 
+    
+    s_d  <= '0';
     s_en <= '1';
     
-    wait for 3 ns;
-    assert(s_q = '0' and s_qbar = '1')
-    report "Chyba" severity error;
-     
-       
-    wait for 7 ns;    
-    s_d <= '1';
-     wait for 10 ns;    
-    s_d <= '0';
-     wait for 10 ns;    
-    s_d <= '1';
-     wait for 10 ns;    
-    s_d <= '0';
-     wait for 10 ns;    
-    s_d <= '1';
-    wait for 10 ns;    
-    s_d <= '0';
-    wait for 10 ns;  
-     
-     s_en <= '0';
-     
-    wait for 10 ns;    
-    s_d <= '1';
-     wait for 10 ns;    
-    s_d <= '0';
-     wait for 10 ns;    
-    s_d <= '1';
-     wait for 10 ns;    
-    s_d <= '0';
-     wait for 10 ns;    
-    s_d <= '1';
-    wait for 10 ns;    
-    s_d <= '0';
-    wait for 10 ns;  
-     
-     s_en <= '1';
-     
-    wait for 10 ns;    
-    s_d <= '1';
-     wait for 10 ns;    
-    s_d <= '0';
-     wait for 10 ns;    
-    s_d <= '1';
-     wait for 10 ns;    
-    s_d <= '0';
-     wait for 10 ns;    
-    s_d <= '1';
-    wait for 10 ns;    
-    s_d <= '0';
-    wait for 10 ns;  
-     
+    --d sekv (en <= '1')
+    wait for 10 ns;
+    s_d  <= '1';
+    wait for 10 ns;
+    s_d  <= '0';
+    wait for 10 ns;
+    s_d  <= '1';
+    wait for 10 ns;
+    s_d  <= '0';
 
     wait for 10 ns;    
-    s_d <= '1';
-     wait for 10 ns;    
-    s_d <= '0';
-     wait for 10 ns;    
-    s_d <= '1';
-     wait for 10 ns;    
-    s_d <= '0';
-     wait for 10 ns;    
-    s_d <= '1';
-    wait for 10 ns;    
-    s_d <= '0';
-    wait for 10 ns;  
     
+    s_d  <= '0';
+    s_en <= '0';
+    
+    --d sekv (en <= '0')
+    wait for 10 ns;
+    s_d  <= '1';
+    wait for 10 ns;
+    
+    s_d  <= '0';
+    wait for 10 ns;
+    s_d  <= '1';
+    wait for 10 ns;
+    s_d  <= '0';
+    wait for 10 ns;
+    
+    s_d  <= '0';
+    s_en <= '1';
+    
+    --d sekv (en <= '1')
+    wait for 5 ns;
+    
+    wait for 5 ns;
+    s_d  <= '1';
+    wait for 6 ns;
+ 
+    wait for 4 ns;
+    s_d  <= '0';
+    wait for 10 ns;
+    s_d  <= '1';
+    wait for 10 ns;
+    s_d  <= '0';
+    wait for 10 ns;
+
+    report "Stimulus process finished" severity note;
     wait;
-    end process p_stimulus;
+end process p_stimulus;
 
 end Behavioral;

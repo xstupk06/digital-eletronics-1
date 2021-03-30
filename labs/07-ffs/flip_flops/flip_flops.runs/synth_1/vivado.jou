@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Mar 30 15:10:40 2021
+# Process ID: 51788
+# Current directory: C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.runs/synth_1
+# Command line: vivado.exe -log t_ff_rst.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source t_ff_rst.tcl
+# Log file: C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.runs/synth_1/t_ff_rst.vds
+# Journal file: C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source t_ff_rst.tcl -notrace

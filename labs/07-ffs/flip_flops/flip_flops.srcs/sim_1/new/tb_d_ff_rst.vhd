@@ -58,53 +58,85 @@ q_bar   => s_qbar
  
  --Clock generation process
  
- p_clk_gen : process
- begin
-    while now < 650 ns loop
+p_clk_gen : process
+begin
+    while now < 40 ms loop
         s_clk_100MHz <= '0';
         wait for c_CLK_100MHZ_PERIOD / 2;
         s_clk_100MHz <= '1';
         wait for c_CLK_100MHZ_PERIOD / 2;
     end loop;
     wait;
- end process p_clk_gen;
- 
- --Reset process
-  p_reset_gen : process
-  begin
+end process p_clk_gen;
+
+--------------------------------------------------------------------
+-- Reset generation process
+--------------------------------------------------------------------
+p_reset_gen : process
+begin
     s_rst <= '0';
-        wait for 53 ns;
-        
-     s_rst <= '1';
-        wait for 15 ns;
-        
-     s_rst <= '0';
-        
-   wait;
-   end process p_reset_gen;
-   
-   
-   
-   p_stimulus :process
-    begin
-        report"Stimulus processs started" severity note;
-     s_d <= '0';   
-    wait for 13 ns;    
-    s_d <= '1';
-     wait for 10 ns;    
+    wait for 28 ns;
+    
+    -- Reset activated
+    s_rst <= '1';
+    wait for 13 ns;
+
+    s_rst <= '0';
+    wait for 17 ns;
+    
+    s_rst <= '1';
+    wait for 33 ns;
+    
+    s_rst <= '1';
+    
+    
+end process p_reset_gen;
+--------------------------------------------------------------------
+-- Data generation process
+--------------------------------------------------------------------
+p_stimulus : process
+begin
+    report "Stimulus process started" severity note;
+
     s_d <= '0';
-     wait for 10 ns;    
+    
+    wait for 14 ns;
     s_d <= '1';
-     wait for 10 ns;    
+    wait for 5 ns;
+
+    wait for 5 ns; 
     s_d <= '0';
-     wait for 10 ns;    
-    s_d <= '1';
-    wait for 10 ns;    
-    s_d <= '0';   
+
     wait for 10 ns;
     
-    wait;
-    end process p_stimulus;
+    s_d <= '1';
+    wait for 10 ns;
+    s_d <= '0';
+    wait for 10 ns;
+    s_d <= '1';
+    wait for 10 ns;
+    s_d <= '0';
+    
+    wait for 10 ns;
+    s_d <= '1';
+    
+    wait for 10 ns;
+    s_d <= '0';
+    
+    wait for 10 ns;
+    s_d <= '1';
+    
+    wait for 10 ns;
+    s_d <= '0';
+    
+    wait for 10 ns;
+    s_d <= '1';
+    
+    wait for 10 ns;
+    s_d <= '0';
 
+    report "Stimulus process finished" severity note;
+    wait;
+end process p_stimulus;
 
 end Behavioral;
