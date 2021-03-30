@@ -85,7 +85,7 @@ begin
     wait for 10 ns;
     s_d  <= '0';
     wait for 5 ns;
-assert(s_q = '0' and s_qbar = '1')
+    assert(s_q = '0' and s_qbar = '1')
     report "Chyba" severity error;
     wait for 5 ns;
     s_d  <= '1';
@@ -107,8 +107,8 @@ assert(s_q = '0' and s_qbar = '1')
     s_d  <= '1';
     wait for 10 ns;
     s_d  <= '0';
-
-    wait for 10 ns;    
+    wait for 10 ns;
+    
     
     s_d  <= '0';
     s_en <= '0';
@@ -116,8 +116,9 @@ assert(s_q = '0' and s_qbar = '1')
     --d sekv (en <= '0')
     wait for 10 ns;
     s_d  <= '1';
-    wait for 10 ns;
+    wait for 5 ns;
     
+    wait for 5 ns;
     s_d  <= '0';
     wait for 10 ns;
     s_d  <= '1';

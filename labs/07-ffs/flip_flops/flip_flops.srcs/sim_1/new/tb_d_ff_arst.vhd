@@ -102,11 +102,9 @@ begin
     wait for 14 ns;
     s_d <= '1';
     wait for 5 ns;
-        
-    assert ((s_arst = '0') and (s_q = '1') and (s_q_bar = '0'))
-    report "chyba" 
-        severity error;
-    wait for 5 ns;
+    assert (s_arst='0' and s_q = '1')
+    report "chyba"  severity error;
+        wait for 5 ns; 
     s_d <= '0';
     wait for 10 ns; 
     

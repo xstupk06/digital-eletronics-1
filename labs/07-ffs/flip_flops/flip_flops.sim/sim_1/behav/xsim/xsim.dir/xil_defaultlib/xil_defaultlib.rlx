@@ -2,11 +2,11 @@
 2020.2
 Nov 18 2020
 09:47:47
-C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_d_ff_arst.vhd,1617113813,vhdl,,,,tb_d_ff_arst,,,,,,,,
-C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_d_ff_rst.vhd,1617112816,vhdl,,,,tb_d_ff_rst,,,,,,,,
-C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_d_latch.vhd,1617113661,vhdl,,,,tb_d_latch,,,,,,,,
-C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_jj_ff_rst.vhd,1617112000,vhdl,,,,tb_jk_ff_rst,,,,,,,,
-C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_t_ff_rst.vhd,1617111256,vhdl,,,,tb_t_ff_rst,,,,,,,,
+C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_d_ff_arst.vhd,1617114578,vhdl,,,,tb_d_ff_arst,,,,,,,,
+C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_d_ff_rst.vhd,1617114961,vhdl,,,,tb_d_ff_rst,,,,,,,,
+C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_d_latch.vhd,1617114773,vhdl,,,,tb_d_latch,,,,,,,,
+C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_jj_ff_rst.vhd,1617115230,vhdl,,,,tb_jk_ff_rst,,,,,,,,
+C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_t_ff_rst.vhd,1617115231,vhdl,,,,tb_t_ff_rst,,,,,,,,
 C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sources_1/new/d_ff_arst.vhd,1617012261,vhdl,C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_d_ff_arst.vhd,,,d_ff_arst,,,,,,,,
 C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sources_1/new/d_ff_rst.vhd,1617112000,vhdl,C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_d_ff_rst.vhd,,,d_ff_rst,,,,,,,,
 C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sources_1/new/d_latch.vhd,1616943241,vhdl,C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_d_latch.vhd,,,d_latch,,,,,,,,

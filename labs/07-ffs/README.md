@@ -219,7 +219,7 @@ begin
 ### Listing of VHDL clock, reset and stimulus processes from the testbench files with syntax highlighting and asserts
 #### tb_d_ff_arst
 ```vhdl
-p_clk_gen : process
+ p_clk_gen : process
 begin
     while now < 40 ms loop
         s_clk_100MHz <= '0';
@@ -235,53 +235,70 @@ end process p_clk_gen;
 --------------------------------------------------------------------
 p_reset_gen : process
 begin
-    s_rst<= '0';
+    s_arst <= '0';
     wait for 28 ns;
     
     -- Reset activated
-    s_rst <= '1';
+    s_arst <= '1';
     wait for 13 ns;
 
-    s_rst <= '0';
+    s_arst <= '0';
     wait for 17 ns;
     
-    s_rst <= '1';
+    s_arst <= '1';
     wait for 33 ns;
     
-    s_rst <= '1';
+    s_arst <= '1';
+    
     
 end process p_reset_gen;
-
 --------------------------------------------------------------------
 -- Data generation process
 --------------------------------------------------------------------
 p_stimulus : process
 begin
-    report "Stimulus process started" severity note;   
-    
-    s_t <= '0';
+    report "Stimulus process started" severity note;
 
-    wait for 3 ns;
-    s_t <= '1';
-    wait for 2 ns;
+    s_d <= '0';
+    
+    wait for 14 ns;
+    s_d <= '1';
+    wait for 5 ns;
+    assert (s_arst='0' and s_q = '1')
+    report "chyba"  severity error;
+        wait for 5 ns; 
+    s_d <= '0';
+    wait for 10 ns; 
+    
+    s_d <= '1';
+    wait for 10 ns;
+    
+    s_d <= '0';
+    wait for 10 ns;
+    
+    s_d <= '1';
+    wait for 10 ns;
+    
+    s_d <= '0';
+    wait for 10 ns;
+    
+    s_d <= '1';
+    wait for 10 ns;
+    
+    s_d <= '0';
+    wait for 10 ns;
+    
+    s_d <= '1';
+    wait for 10 ns;
+    
+    s_d <= '0';
+    wait for 10 ns;
+    
+    s_d <= '1';
+    wait for 10 ns;
+    
+    s_d <= '0';
 
-    wait for 3 ns;
-    s_t <= '0';
-    wait for 2 ns;
-       
-    wait for 3 ns;
-    s_t <= '1';
-    wait for 3 ns;
-    
-    wait for 30 ns;
-    s_t <= '0';
-    wait for 5 ns;
-    s_t <= '1';
-    wait for 5 ns;
-    s_t <= '0';
-    wait for 5 ns;
-    s_t <= '1';
-    
     report "Stimulus process finished" severity note;
     wait;
 end process p_stimulus;
@@ -333,7 +350,8 @@ begin
     wait for 14 ns;
     s_d <= '1';
     wait for 5 ns;
-
+assert (s_rst = '0' and s_q = '1')
+    report "chyba" severity error;
     wait for 5 ns; 
     s_d <= '0';
 
@@ -368,7 +386,6 @@ begin
     report "Stimulus process finished" severity note;
     wait;
 end process p_stimulus;
-
 ```
 #### tb_jk_ff_rst
 ```vhdl
@@ -419,7 +436,9 @@ begin
     s_j <= '0';
     s_k <= '0';
     wait for 2 ns;
- 
+    assert ((s_rst = '0') and (s_j = '0') and (s_k = '0') and (s_q = '0'))
+    report "chyba" 
+        severity error;
     wait for 3 ns;
     s_j <= '1';
     s_k <= '0';
@@ -497,7 +516,9 @@ begin
     report "Stimulus process started" severity note;   
     
     s_t <= '0';
-
+    wait for 42 ns;
+assert ((s_rst = '0') and (s_t = '0') and (s_q = '0'))
+    report "chyba" severity error;
     wait for 3 ns;
     s_t <= '1';
     wait for 2 ns;

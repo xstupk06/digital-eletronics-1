@@ -1,0 +1,8 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_t_ff_rst/p_stimulus  File: C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_t_ff_rst.vhd
+Error: chyba
+Time: 0 ps  Iteration: 0  Process: /tb_t_ff_rst/p_stimulus  File: C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_t_ff_rst.vhd
+Note: Stimulus process finished
+Time: 61 ns  Iteration: 0  Process: /tb_t_ff_rst/p_stimulus  File: C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_t_ff_rst.vhd

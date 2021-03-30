@@ -1,6 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_d_ff_arst.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_d_ff_arst'
-ERROR: [VRFC 10-2989] 's_q_bar' is not declared [C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_d_ff_arst.vhd:106]
-ERROR: [VRFC 10-2123] 0 definitions of operator "and" match here [C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_d_ff_arst.vhd:106]
-ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_d_ff_arst.vhd:37]
-INFO: [VRFC 10-3070] VHDL file 'C:/Stupka/digital-eletronics-1/labs/07-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_d_ff_arst.vhd' ignored due to errors

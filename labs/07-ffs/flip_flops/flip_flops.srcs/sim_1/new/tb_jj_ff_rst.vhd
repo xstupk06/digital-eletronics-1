@@ -109,7 +109,9 @@ begin
     s_j <= '0';
     s_k <= '0';
     wait for 2 ns;
- 
+    assert ((s_rst = '0') and (s_j = '0') and (s_k = '0') and (s_q = '0'))
+    report "chyba" 
+        severity error;
     wait for 3 ns;
     s_j <= '1';
     s_k <= '0';
