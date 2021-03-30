@@ -544,7 +544,7 @@ assert ((s_rst = '0') and (s_t = '0') and (s_q = '0'))
     wait;
 end process p_stimulus;
 ```
-#### p_d_ff_arst
+
 ## Screenshot with simulated time waveforms; always display all inputs and outputs. The full functionality of the entities must be verified
 #### p_d_ff_arst
 ![1](images/simulace_d_ff_arst.PNG)
