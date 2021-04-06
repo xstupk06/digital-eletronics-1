@@ -101,6 +101,7 @@ begin
     report "Stimulus process started" severity note;   
     
     s_t <= '0';
+     wait for 42 ns;
 assert ((s_rst = '0') and (s_t = '0') and (s_q = '0'))
     report "chyba" severity error;
     wait for 3 ns;
